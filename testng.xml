@@ -8,7 +8,9 @@
   <test name="PracticeTests">
     <classes>
        <class name="tests.LoginTest"/>
-            
+       <class name="tests.AdminTest"/>
+       <class name="tests.ChangePasswordTest"/>
+                
   </classes>
  </test> 
 </suite>

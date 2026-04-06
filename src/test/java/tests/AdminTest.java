@@ -13,7 +13,7 @@ public class AdminTest extends BaseTest {
 	private static final Logger logger = LogManager.getLogger(LoginTest.class);
 	
 	@Test
-	public void addUser() {
+	public void addUser() throws Throwable {
 		
 		logger.info("Launching browser");
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -26,10 +26,10 @@ public class AdminTest extends BaseTest {
         logger.info("Click on PIM and Admin pages to add the user");
         AdminPage adminpage = new AdminPage(driver);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        adminpage.addUser("Sanju", "Samson", "090101", "Sanju", "Ranjith Parisha", "MyOrangeHRM@2026");
+        adminpage.addUser("Sanju", "Samson", "090506", "Sanju", " Stephen Emannuel", "MyOrangeHRM@2026");
         logger.info("User added successfully");
         
-        //Assert.assertTrue(driver.getTitle().contains("viewSystemUsers"), "User not added!");
+        Assert.assertTrue(driver.getCurrentUrl().contains("saveSystemUser"), "User not added!");
 		
 		
 	}

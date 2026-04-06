@@ -3,6 +3,7 @@ package pages;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,7 +36,7 @@ public class AdminPage {
         this.driver = driver;
     }
 	
-	public void addUser(String firstname, String lastname, String empid, String employee, String user, String password) {
+	public void addUser(String firstname, String lastname, String empid, String employee, String user, String password) throws Throwable {
         
 		//PIM Page
 		driver.findElement(clickPIM).click();
@@ -70,25 +71,33 @@ public class AdminPage {
         ExpectedConditions.elementToBeClickable(By.xpath("//div[@role='listbox']//span[text()='Enabled']")));
         option1.click();    
         
-        WebElement input = wait.until(
-        	    ExpectedConditions.visibilityOfElementLocated(
-        	        By.xpath("//input[@placeholder='Type for hints...']")));
-        input.sendKeys(employee);
-        
-//        	 wait for suggestions
-        	wait.until(ExpectedConditions.visibilityOfElementLocated(
-        	    By.xpath("//div[@role='listbox']//span")));
-        	
-
-//        	// click required option
-        	wait.until(ExpectedConditions.elementToBeClickable(
-        	    By.xpath("//div[@role='listbox']//span[text()='+employee+']"))).click();
+//        WebElement input = wait.until(
+//        	    ExpectedConditions.visibilityOfElementLocated(
+//        	        By.xpath("//input[@placeholder='Type for hints...']")));
+//        input.sendKeys(employee);
+//        
+////        	 wait for suggestions
+//        	wait.until(ExpectedConditions.visibilityOfElementLocated(
+//        	    By.xpath("//div[@role='listbox']//span")));
+//        	
+//
+////        	click required option
+//        	wait.until(ExpectedConditions.elementToBeClickable(
+//        	    By.xpath("//div[@role='listbox']//span[text()='+employee+']"))).click();
                 
                           
-        //driver.findElement(EmployeeName).sendKeys(employee);
+        WebElement e = driver.findElement(EmployeeName);
+        e.click();
+        e.sendKeys("A");
+        Thread.sleep(6000);
+        e.sendKeys(Keys.ARROW_DOWN);
+        e.sendKeys(Keys.ENTER);
+    
         driver.findElement(UserName).sendKeys(user);
         driver.findElement(Password).sendKeys(password);
+        Thread.sleep(3000);
         driver.findElement(ConfirmPassword).sendKeys(password);
+        Thread.sleep(3000);
         driver.findElement(SaveButton1).click();
         
     }
