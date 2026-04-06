@@ -1,7 +1,9 @@
-package utils;
+package utils_project;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+
+import utils.ExtentManager;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
