@@ -1,0 +1,33 @@
+2026-04-03 17:07:45 INFO  tests.LoginTest - Launching browser
+2026-04-03 17:07:48 INFO  tests.LoginTest - Login Page Opened
+2026-04-03 17:07:48 INFO  tests.LoginTest - Logged in Successfully
+2026-04-03 17:07:48 INFO  tests.LoginTest - Click on PIM and Admin pages to add the user
+2026-04-03 17:07:56 INFO  tests.LoginTest - User added successfully
+2026-04-03 17:27:33 INFO  tests.LoginTest - Launching browser
+2026-04-03 17:27:35 INFO  tests.LoginTest - Login Page Opened
+2026-04-03 17:27:36 INFO  tests.LoginTest - Logged in Successfully
+2026-04-03 17:27:36 INFO  tests.LoginTest - Click on PIM and Admin pages to add the user
+2026-04-03 17:27:43 INFO  tests.LoginTest - User added successfully
+2026-04-03 17:33:24 INFO  tests.LoginTest - Launching browser
+2026-04-03 17:33:27 INFO  tests.LoginTest - Login Page Opened
+2026-04-03 17:33:28 INFO  tests.LoginTest - Logged in Successfully
+2026-04-03 17:33:28 INFO  tests.LoginTest - Click on PIM and Admin pages to add the user
+2026-04-03 17:33:35 INFO  tests.LoginTest - User added successfully
+2026-04-03 17:56:39 INFO  tests.LoginTest - Launching browser
+2026-04-03 17:56:44 INFO  tests.LoginTest - Login Page Opened
+2026-04-03 17:56:45 INFO  tests.LoginTest - Logged in Successfully
+2026-04-03 17:56:45 INFO  tests.LoginTest - Click on PIM and Admin pages to add the user
+2026-04-03 22:08:38 INFO  tests.LoginTest - Launching browser
+2026-04-03 22:08:48 INFO  tests.LoginTest - Login Page Opened
+2026-04-03 22:08:53 INFO  tests.LoginTest - Logged in Successfully
+2026-04-03 22:08:53 INFO  tests.LoginTest - Click on PIM and Admin pages to add the user
+2026-04-03 22:09:12 INFO  tests.LoginTest - User added successfully
+2026-04-03 22:25:08 INFO  tests.LoginTest - Launching browser
+2026-04-03 22:25:09 INFO  tests.LoginTest - Login Page Opened
+2026-04-03 22:25:12 INFO  tests.LoginTest - Logged in Successfully
+2026-04-03 22:25:12 INFO  tests.LoginTest - Click on PIM and Admin pages to add the user
+2026-04-03 22:25:18 INFO  tests.LoginTest - User added successfully
+2026-04-03 22:53:27 INFO  tests.LoginTest - Launching browser
+2026-04-03 22:53:36 INFO  tests.LoginTest - Login Page Opened
+2026-04-03 22:53:37 INFO  tests.LoginTest - Logged in Successfully
+2026-04-03 22:53:37 INFO  tests.LoginTest - Click on PIM and Admin pages to add the user

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SeleniumPractice">
+   <listeners>
+      <listener class-name="utils.TestListener"/>
+         </listeners>
+  <test name="PracticeTests">
+    <classes>
+       <class name="tests.LoginTest"/>
+       <class name="tests.AdminTest"/>       
+  </classes>
+ </test> 
+</suite>
