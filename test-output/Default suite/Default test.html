@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Apr 07 12:37:02 IST 2026</td>
+<td>Started on:</td><td>Tue Apr 07 15:21:29 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>52 seconds (52756 ms)</td>
+<tr><td>Total time:</td><td>174 seconds (174791 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.AdminTest.addUser()'><b>addUser</b><br>Test class: tests.AdminTest</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; data-v-304890b0=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1147, 497). Other element would receive the click: &lt;div data-v-d5bfe35b=&quot;&quot; class=&quot;oxd-form-loader&quot;&gt;...&lt;/div&gt;
+<td title='tests.ChangePasswordTest.ChangePassword()'><b>ChangePassword</b><br>Test class: tests.ChangePasswordTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;oxd-dropdown-menu&apos;]//a[text()=&apos;Change Password&apos;]&quot;}
   (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [79bcb83e100ed08a41a031296e07a8b8, clickElement {id=f.9DF5E5180983DF794244A0AF193F2F9F.d.BF39FC0A0942FAEAC52F835067B0F603.e.85}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\HEMANTH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55257}, goog:processID: 28388, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55257/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (79bcb83e100ed08a41a031296e07a8b8)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
-Session ID: 79bcb83e100ed08a41a031296e07a8b8
+Command: [08c14ebc6080425f9860079e7fe74e08, findElement {using=xpath, value=//ul[@class=&apos;oxd-dropdown-menu&apos;]//a[text()=&apos;Change Password&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\HEMANTH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52053}, goog:processID: 33608, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52053/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 08c14ebc6080425f9860079e7fe74e08
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -93,10 +93,12 @@ Session ID: 79bcb83e100ed08a41a031296e07a8b8
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pages.AdminPage.addUser(AdminPage.java:47)
-	at tests.AdminTest.addUser(AdminTest.java:30)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at pages.ChangePasswordPage.ChangePassword(ChangePasswordPage.java:25)
+	at tests.ChangePasswordTest.ChangePassword(ChangePasswordTest.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -123,16 +125,16 @@ Session ID: 79bcb83e100ed08a41a031296e07a8b8
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2013332834", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2013332834'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button data-v-10d463b7=&quot;&quot; data-v-304890b0=&quot;&quot; type=&quot;submit&quot; class=&quot;oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space&quot;&gt;...&lt;/button&gt; is not clickable at point (1147, 497). Other element would receive the click: &lt;div data-v-d5bfe35b=&quot;&quot; class=&quot;oxd-form-loader&quot;&gt;...&lt;/div&gt;
+</pre></div><a href='#' onClick='toggleBox("stack-trace1899020565", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1899020565'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;oxd-dropdown-menu&apos;]//a[text()=&apos;Change Password&apos;]&quot;}
   (Session info: chrome=146.0.7680.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [79bcb83e100ed08a41a031296e07a8b8, clickElement {id=f.9DF5E5180983DF794244A0AF193F2F9F.d.BF39FC0A0942FAEAC52F835067B0F603.e.85}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\HEMANTH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55257}, goog:processID: 28388, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55257/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (79bcb83e100ed08a41a031296e07a8b8)] -&gt; xpath: //button[@type=&apos;submit&apos;]]
-Session ID: 79bcb83e100ed08a41a031296e07a8b8
+Command: [08c14ebc6080425f9860079e7fe74e08, findElement {using=xpath, value=//ul[@class=&apos;oxd-dropdown-menu&apos;]//a[text()=&apos;Change Password&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\HEMANTH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52053}, goog:processID: 33608, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52053/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 08c14ebc6080425f9860079e7fe74e08
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -140,10 +142,12 @@ Session ID: 79bcb83e100ed08a41a031296e07a8b8
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at pages.AdminPage.addUser(AdminPage.java:47)
-	at tests.AdminTest.addUser(AdminTest.java:30)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at pages.ChangePasswordPage.ChangePassword(ChangePasswordPage.java:25)
+	at tests.ChangePasswordTest.ChangePassword(ChangePasswordTest.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -171,8 +175,8 @@ Session ID: 79bcb83e100ed08a41a031296e07a8b8
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>48</td>
-<td>tests.AdminTest@19fe4644</td></tr>
+<td>117</td>
+<td>tests.ChangePasswordTest@31e3250d</td></tr>
 </table><p>
 </body>
 </html>

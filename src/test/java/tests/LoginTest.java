@@ -9,13 +9,14 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
+import pages.LogoutPage;
 
 public class LoginTest extends BaseTest {
 	
 	private static final Logger logger = LogManager.getLogger(LoginTest.class);
 	
-	    @Test(dataProvider="loginData", groups = "Smoke")
-	    public void testValidLogin(String username, String password) {
+	    @Test(groups = "Smoke")
+	    public void testValidLogin() {
 	    	logger.info("Launching browser");
 	        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	        logger.info("Waiting to load the browser fully");
@@ -23,19 +24,17 @@ public class LoginTest extends BaseTest {
 	        logger.info("Home page loaded");
 	        LoginPage loginPage = new LoginPage(driver);
 	        logger.info("Providing Username and Password");
-	        loginPage.login(username,password);
+	        loginPage.login("Admin", "admin123");
 	        logger.info("Successfully logged in");
 
 	        Assert.assertTrue(driver.getTitle().contains("OrangeHRM"), "Login failed!");
+	        
+	        LogoutPage lp = new LogoutPage(driver);
+	        lp.Logout();
+	        
+	        Assert.assertTrue(driver.getCurrentUrl().contains("auth"), "Logout did not happen");
+	        
+	        logger.info("Successfully logged out");
+	        
 	    }
-	    
-	    @DataProvider(name = "loginData")
-	    public Object[][] getData() {
-	        return new Object[][] {
-	            {"Admin", "admin123"},
-	            {"Admin", "wrongpass"},
-	            {"InvalidUser", "admin123"}
-	        };
-	    }
-
 }

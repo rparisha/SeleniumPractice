@@ -8,6 +8,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.AdminPage;
 import pages.LoginPage;
+import pages.LogoutPage;
 
 public class AdminTest extends BaseTest {
 	
@@ -27,10 +28,16 @@ public class AdminTest extends BaseTest {
         logger.info("Click on PIM and Admin pages to add the user");
         AdminPage adminpage = new AdminPage(driver);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        adminpage.addUser("Ram", "Lakshman", "012","A","Rumaneon Johnson", "MyHRMORange@2026d");
+        adminpage.addUser("Ram", "Lakshman", "012","A","Benjamin Franklin", "MyHRMORange@2026d");
         logger.info("User added successfully");
         
-        Assert.assertTrue(driver.getCurrentUrl().contains("saveSystemUseruyu"), "User not added!");
+        Assert.assertTrue(driver.getCurrentUrl().contains("saveSystemUser"), "User not added!");
+        
+        logger.info("Logging out");
+        LogoutPage lp = new LogoutPage(driver);
+        lp.Logout();
+        
+        Assert.assertTrue(driver.getCurrentUrl().contains("auth"), "Logout did not happen");
 			
 	}
 	

@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-SeleniumPractice" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-SeleniumPractice">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumPractice" title="tests.ChangePasswordTest" class="method navigator-link" hash-for-method="ChangePassword">ChangePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SeleniumPractice" title="tests.AdminTest" class="method navigator-link" hash-for-method="addUser">addUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SeleniumPractice" title="tests.LoginTest" class="method navigator-link" hash-for-method="testValidLogin">testValidLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SeleniumPractice -->
@@ -121,6 +131,21 @@
           <div class="suite-SeleniumPractice-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">tests.ChangePasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangePassword">
+                  </a> <!-- ChangePassword -->
+                  <span class="method-name">ChangePassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumPractice-class-passed -->
+          <div class="suite-SeleniumPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.AdminTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -129,6 +154,21 @@
                   <a name="addUser">
                   </a> <!-- addUser -->
                   <span class="method-name">addUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumPractice-class-passed -->
+          <div class="suite-SeleniumPractice-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin">
+                  </a> <!-- testValidLogin -->
+                  <span class="method-name">testValidLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -148,7 +188,9 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;PracticeTests&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
       &lt;class name=&quot;tests.AdminTest&quot;/&gt;
+      &lt;class name=&quot;tests.ChangePasswordTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- PracticeTests --&gt;
 &lt;/suite&gt; &lt;!-- SeleniumPractice --&gt;
@@ -162,7 +204,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">PracticeTests (1 class)</span>
+                <span class="test-name">PracticeTests (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -173,10 +215,26 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">ChangePassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">Sanity</span>
               <br/>
               <div class="method-in-group">
                 <span class="method-in-group-name">addUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testValidLogin</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -196,16 +254,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addUser')
 data.setCell(0, 2, 'tests.AdminTest')
-data.setCell(0, 3, 108067);
+data.setCell(0, 3, 27765);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ChangePassword')
+data.setCell(1, 2, 'tests.ChangePasswordTest')
+data.setCell(1, 3, 9534);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testValidLogin')
+data.setCell(2, 2, 'tests.LoginTest')
+data.setCell(2, 3, 6326);
 window.suiteTableData['SeleniumPractice']= { tableData: data, tableDiv: 'times-div-SeleniumPractice'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-SeleniumPractice">
               </div> <!-- times-div-SeleniumPractice -->
             </div> <!-- times-div -->
@@ -231,18 +297,48 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.AdminTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">addUser</span>
-                <span class="method-start">3390 ms</span>
+                <span class="method-name">testValidLogin</span>
+                <span class="method-start">2416 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">111490 ms</span>
+                <span class="method-start">8752 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AdminTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9108 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">addUser</span>
+                <span class="method-start">10404 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">38174 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ChangePasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">38603 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ChangePassword</span>
+                <span class="method-start">40180 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">49716 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

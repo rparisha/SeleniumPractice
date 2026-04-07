@@ -22,7 +22,7 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown() {
-        //DriverFactory.quitDriver();
+        DriverFactory.quitDriver();
        
     }
 

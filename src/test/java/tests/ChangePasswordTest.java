@@ -28,7 +28,8 @@ public class ChangePasswordTest extends BaseTest {
 		
 		ChangePasswordPage cp = new ChangePasswordPage(driver);
 		logger.info("Changing the password");
-		cp.ChangePassword("admin123", "Rparisha@2026", "Rparisha@2026");
+
+		cp.ChangePassword("Admin123", "Rparisha@20256", "Rparisha@20256");
 		
 		String CurrentURL = driver.getCurrentUrl();
 		System.out.println(CurrentURL);
@@ -40,9 +41,9 @@ public class ChangePasswordTest extends BaseTest {
 		lo.Logout();
 		
 		Assert.assertTrue(driver.getCurrentUrl().contains("auth"), "Logout did not happen");
-				
+		
 	}
 	
-	
+		
 
 }
