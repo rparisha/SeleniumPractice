@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pages.ChangePasswordPage;
@@ -13,9 +14,9 @@ import pages.LogoutPage;
 
 public class ChangePasswordTest extends BaseTest {
 	
-	private static final Logger logger = LogManager.getLogger(LoginTest.class);
+	private static final Logger logger = LogManager.getLogger(ChangePasswordTest.class);
 	
-	@Test
+	@Test(groups = "Regression")
 	public void ChangePassword() {
 		
 		logger.info("Logging to the portal");
@@ -39,8 +40,9 @@ public class ChangePasswordTest extends BaseTest {
 		lo.Logout();
 		
 		Assert.assertTrue(driver.getCurrentUrl().contains("auth"), "Logout did not happen");
-		
-		
+				
 	}
+	
+	
 
 }

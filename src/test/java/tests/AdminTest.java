@@ -4,6 +4,7 @@ import java.time.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.AdminPage;
 import pages.LoginPage;
@@ -12,7 +13,7 @@ public class AdminTest extends BaseTest {
 	
 	private static final Logger logger = LogManager.getLogger(LoginTest.class);
 	
-	@Test
+	@Test(groups = "Sanity")
 	public void addUser() throws Throwable {
 		
 		logger.info("Launching browser");
@@ -26,12 +27,12 @@ public class AdminTest extends BaseTest {
         logger.info("Click on PIM and Admin pages to add the user");
         AdminPage adminpage = new AdminPage(driver);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        adminpage.addUser("Sanju", "Samson", "090506", "Sanju", " Stephen Emannuel", "MyOrangeHRM@2026");
+        adminpage.addUser("Ram", "Lakshman", "012","A","Rumaneon Johnson", "MyHRMORange@2026d");
         logger.info("User added successfully");
         
-        Assert.assertTrue(driver.getCurrentUrl().contains("saveSystemUser"), "User not added!");
-		
-		
+        Assert.assertTrue(driver.getCurrentUrl().contains("saveSystemUseruyu"), "User not added!");
+			
 	}
-
+	
+	
 }

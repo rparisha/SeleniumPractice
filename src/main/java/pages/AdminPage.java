@@ -70,22 +70,8 @@ public class AdminPage {
         WebElement option1= wait1.until(
         ExpectedConditions.elementToBeClickable(By.xpath("//div[@role='listbox']//span[text()='Enabled']")));
         option1.click();    
-        
-//        WebElement input = wait.until(
-//        	    ExpectedConditions.visibilityOfElementLocated(
-//        	        By.xpath("//input[@placeholder='Type for hints...']")));
-//        input.sendKeys(employee);
-//        
-////        	 wait for suggestions
-//        	wait.until(ExpectedConditions.visibilityOfElementLocated(
-//        	    By.xpath("//div[@role='listbox']//span")));
-//        	
-//
-////        	click required option
-//        	wait.until(ExpectedConditions.elementToBeClickable(
-//        	    By.xpath("//div[@role='listbox']//span[text()='+employee+']"))).click();
                 
-                          
+                      
         WebElement e = driver.findElement(EmployeeName);
         e.click();
         e.sendKeys("A");

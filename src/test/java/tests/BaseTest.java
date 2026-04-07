@@ -14,7 +14,7 @@ public class BaseTest {
     protected ExtentReports extent;
     protected ExtentTest test;
 
-    @BeforeClass
+    @BeforeClass 
     public void setUp() {
         driver = DriverFactory.getDriver();
         extent = ExtentManager.getInstance();
@@ -22,7 +22,7 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown() {
-        DriverFactory.quitDriver();
+        //DriverFactory.quitDriver();
        
     }
 
